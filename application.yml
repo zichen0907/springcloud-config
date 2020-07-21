@@ -1,13 +1,28 @@
 server: 
   port: 3344 
   
-spring:
-  application:
-    name:  microservicecloud-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:zzyybs/microservicecloud-config.git #GitHub上面的git仓库名字
+
+spring: 
+  profiles: 
+    active: 
+      - pro
+
+
+‐‐‐ 
+server: 
+  port: 8083 
+  spring: 
+    profiles: dev 
+    application:
+      name: springcloud-config-huayi-dev
+
+‐‐‐
+
+server: 
+  port: 8084
+  spring: 
+    profiles: pro #指定属于哪个环境
+    application:
+      name: springcloud-config-huayi-pro
  
 
