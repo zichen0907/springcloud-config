@@ -8,7 +8,7 @@ spring:
     - pro
 
 
-‐‐‐ 
+---
 server: 
   port: 8083
 spring: 
@@ -16,7 +16,7 @@ spring:
   application:
     name: springcloud-config-huayi-dev
 
-‐‐‐
+---
 
 server: 
   port: 8084
